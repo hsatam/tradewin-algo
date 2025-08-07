@@ -1,0 +1,46 @@
+API_KEY : "69w63z1zdavw0uxf"                        # API Key for Tradewin
+API_SECRET : "q16utdl041f9vbfaiszkjbz7sq8icj6q"     # API Secret Key for Tradewin
+SYMBOL : "BANKNIFTY25AUGFUT"                        # Futures Symbol to trade in - (Index - NSE:NIFTY BANK)
+INTERVAL : "5minute"                                # Interval to fetch data
+TRADE_QTY : 35                                      # Quantity to trade 35 = 1 Lot
+TRAIL_AMOUNT : 100                                  # Points to trail SL
+PAPER_TRADING : True                                # TRUE for Paper Trading
+TOKEN_FILE : "request_token.txt"                    # File to save token into
+strategy_name: "ORB"
+strategy_mode: "adaptive"
+vwap_dev: 0.0025
+WEEKEND_TESTING: True
+SLEEP_INTERVAL: 1       # 60
+COOLDOWN_MINUTES: 1     # 10
+DB_USER: "hemantsatam"
+DB_PASS: ""
+DB_NAME: "TradeWin"
+DB_HOST: "localhost"
+DB_PORT: 5432
+FROM_DATE: "2024-06-03T09:15:00"
+TO_DATE: "2024-06-04T10:30:00"
+MAX_DAILY_LOSS: 10000
+STALL_BAND_RANGE: 15
+STALL_CANDLE_COUNT: 6
+RETRACE_THRESHOLD: 0.4
+MOMENTUM_BODY_RATIO: 0.25
+entry_buffer: 0.5
+orb:
+  sl_factor: 1.5
+  target_factor: 4.0
+vwap_rev:
+  sl_mult: 0.8
+  target_mult: 4.0
+  rr_threshold: 1.2
+telegram:
+  enabled: false
+  bot_token: "8426109518:AAHMzOY2aFtMEbcP2R_ZXm71HVs03uPPiQA"
+  chat_id: "6556590306"
+annual_holidays:
+  - 2025-01-01  # New Year
+  - 2025-01-26  # Republic Day
+  - 2025-03-31  # Holi
+  - 2025-08-15  # Independence Day
+  - 2025-10-02  # Gandhi Jayanti
+  - 2025-10-24  # Diwali
+  - 2025-12-25  # Christmas
